@@ -15,15 +15,11 @@
 
 	<script data-cfasync="false" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	
+	<script defer src="assets/js/jquery.form.js"></script>
+
 	<script src="assets/berniesanders2016/js/vendor/modernizr.custom.min.js"></script>
 	<script async src="assets/bower_components/picturefill/dist/picturefill.min.js" type="text/javascript"></script>
 	<script defer src="assets/berniesanders2016/js/main.js"></script>
-	<script>
-		Modernizr.load ({
-			test : Modernizr.mq('only all') ,
-			nope : ['assets/bower_components/respond/dest/respond.min.js']
-		});
-	</script>
 
 	<script src="https://use.typekit.net/djg5cfd.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -40,15 +36,21 @@
 	</section>
 	<!-- /TOP NOTIFICATION -->
 
-	<!-- EXPANDABLE MENU -->
-	<header class="clearfix" role="banner">
+	<!-- EXPANDABLE MENU - IMAGE -->
+	<script data-cfasync="false">
+		smimage = "assets/berniesanders2016/images/nav/secondary-bg-sm-01.jpg";
+		lgimage = "assets/berniesanders2016/images/nav/secondary-bg-lg-01.jpg";
+	</script>
+	<header class="clearfix custom" role="banner" style="height: 388px;">
 		<div class="visibility"></div><a class="logo sanders-logo" href="#home" title="Home">
-		<h1>Bernie Sanders</h1><svg viewbox="0 0 480 200">
+		<h1>
+			Bernie Sanders
+		</h1><svg viewbox="0 0 480 200">
 		<use xlink:href="assets/berniesanders2016/images/icns/sanders-logo.svg#logo" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
 		<nav>
 			<button class="expand" type="button">Menu<span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
 			<ul class="menu" id="menu-main-menu">
-				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-821" id="menu-item-821">
+				<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-414 current_page_item menu-item-821" id="menu-item-821">
 					<a href="https://berniesanders.com/about/">Meet Bernie</a>
 				</li>
 				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-868" id="menu-item-868">
@@ -74,17 +76,20 @@
 				</li>
 			</ul>
 		</nav>
-
-		<nav class="full-nav clearfix">
+		<nav class="full-nav clearfix" style="display: none;">
 			<div class="nav-container">
-				<h2>Menu <button class="close" type="button">Close</button></h2>
+				<h2>
+					Menu <button class="close" type="button">Close</button>
+				</h2>
 				<div class="navgroup">
-					<h3>Learn</h3>
+					<h3>
+						Learn
+					</h3>
 					<ul class="menu" id="menu-learn">
 						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-871" id="menu-item-871">
 							<a href="https://berniesanders.com/">Home</a>
 						</li>
-						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-820" id="menu-item-820">
+						<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-414 current_page_item menu-item-820" id="menu-item-820">
 							<a href="https://berniesanders.com/about/">Meet Bernie</a>
 						</li>
 						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-869" id="menu-item-869">
@@ -102,7 +107,9 @@
 					</ul>
 				</div>
 				<div class="navgroup">
-					<h3>Organize</h3>
+					<h3>
+						Organize
+					</h3>
 					<ul class="menu" id="menu-organize">
 						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-777" id="menu-item-777">
 							<a href="https://secure.actblue.com/contribute/page/lets-go-bernie?refcode=homepage_full_nav">Contribute</a>
@@ -128,7 +135,9 @@
 					</ul>
 				</div>
 				<div class="navgroup">
-					<h3>Connect</h3>
+					<h3>
+						Connect
+					</h3>
 					<ul class="menu" id="menu-connect">
 						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-778" id="menu-item-778">
 							<a href="https://www.facebook.com/berniesanders" target="_blank">Facebook</a>
@@ -148,7 +157,9 @@
 					</ul>
 				</div>
 				<div class="navgroup">
-					<h3>States</h3>
+					<h3>
+						States
+					</h3>
 					<ul class="menu" id="menu-states">
 						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-779" id="menu-item-779">
 							<a href="https://berniesanders.com/iowa/">Iowa</a>
@@ -168,7 +179,9 @@
 					</ul>
 				</div>
 				<div class="navgroup">
-					<h3>Media</h3>
+					<h3>
+						Media
+					</h3>
 					<ul class="menu" id="menu-media">
 						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-780" id="menu-item-780">
 							<a href="/press-release">Press Releases</a>
@@ -184,18 +197,542 @@
 			</div>
 		</nav>
 	</header>
-	<!-- /EXPANDABLE MENU -->
+	<!-- /EXPANDABLE MENU - IMAGE -->
 
-	<!-- MESSAGE BOX + BUTTON -->
-	<section id="content">
+	<!-- INTRODUCTION FLIER -->
+	<div class="introduction-section">
+		<section>
+			<div class="introduction-content">
+				<h1>Introduction Flier<em>A Big, Bold Message Appears</em></h1>
+			</div>
+		</section>
+	</div>
+	<!-- /INTRODUCTION FLIER -->
+
+	<!-- BERN QUOTE -->
+	<div class="quote-section">
+		<section>
+			<div class="issue-quote">
+				<div class="issue-quote--content">
+					<span>Bern Quote -</span> We are a <span>nation of immigrants</span>. I am the son of an immigrant myself. <span>Their story, my story, our story is a story of America</span>: hard-working families coming to the United States <span>to create a brighter future for their children</span>. The story of immigrants is the story of America, a story <span>rooted in family and fueled by hope</span>. It continues today in families all across the United States.
+					<div class="issue-quote--footer">
+						<h1>— Senator Bernie Sanders</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- /BERN QUOTE -->
+
+	<!-- IMAGE GRID -->
+	<div class="details-section">
+		<h1>
+			Image Grid
+		</h1>
+		<div class="details-list">
+			<a href="https://twitter.com/home?status=Bernie%20would%20allow%20immigrants%20to%20purchase%20health%20coverage%20under%20the%20Affordable%20Care%20Act.%20Read%20his%20plan%3A%20http%3A//bernie.to/FamiliesFirstImmigration" target="_blank">
+			<div class="detail-background" style="background-image: url('assets/berniesanders2016/images/image-grid/emergency.jpg')"></div>
+			<div class="detail-cover"></div>
+			<div class="detail-text">
+				<span>Allow immigrants to purchase health coverage under the Affordable Care Act.</span><span class="share-link"><span class="icon icn-twitter"></span><span class="text">Share</span></span>
+			</div></a> <a href="https://twitter.com/home?status=Bernie%20would%20establish%20a%20whistleblower%20visa%20for%20workers%20reporting%20labor%20violations.%20Read%20his%20plan%3A%0Ahttp%3A//bernie.to/FamiliesFirstImmigration" target="_blank">
+			<div class="detail-background" style="background-image: url('assets/berniesanders2016/images/image-grid/bernie-picketing.jpg')"></div>
+			<div class="detail-cover"></div>
+			<div class="detail-text">
+				<span>Issue whistleblower visas for workers who report abuse and employer violations.</span><span class="share-link"><span class="icon icn-twitter"></span><span class="text">Share</span></span>
+			</div></a> <a href="https://twitter.com/home?status=We%20must%20redirect%20resources%20away%20from%20walls%20to%20modernize%20our%20border%20and%20ensure%20oversight%20that%20protects%20communities.%0Ahttp%3A//bernie.to/FamiliesFirstImmigration" target="_blank">
+			<div class="detail-background" style="background-image: url('assets/berniesanders2016/images/image-grid/officer-phone.jpg')"></div>
+			<div class="detail-cover"></div>
+			<div class="detail-text">
+				<span>Redirect resources away from boondoggle walls to modernize our border and ensure proper oversight that protects border communities.</span><span class="share-link"><span class="icon icn-twitter"></span><span class="text">Share</span></span>
+			</div></a> <a href="https://twitter.com/home?status=We%20must%20expand%20humanitarian%20parole%20to%20ensure%20the%20return%20of%20unjustly%20deported%20immigrants.%20Read%20Bernie%E2%80%99s%20plan%3A%0Ahttp%3A//bernie.to/FamiliesFirstImmigration" target="_blank">
+			<div class="detail-background" style="background-image: url('assets/berniesanders2016/images/image-grid/bernie-small-crowd.jpg')"></div>
+			<div class="detail-cover"></div>
+			<div class="detail-text">
+				<span>Employ humanitarian parole to ensure the return of unjustly deported immigrants and unify broken families.</span><span class="share-link"><span class="icon icn-twitter"></span><span class="text">Share</span></span>
+			</div></a> <a href="https://twitter.com/home?status=Bernie%20would%20ensure%20that%20our%20border%20is%20secure%20all%20while%20protecting%20the%20rights%20and%20needs%20of%20our%20border%20communities.%0Ahttp%3A//bernie.to/FamiliesFirstImmigration" target="_blank">
+			<div class="detail-background" style="background-image: url('assets/berniesanders2016/images/image-grid/border.jpg')"></div>
+			<div class="detail-cover"></div>
+			<div class="detail-text">
+				<span>Ensure our border remains secure and protects local communities.</span><span class="share-link"><span class="icon icn-twitter"></span><span class="text">Share</span></span>
+			</div></a> <a href="https://twitter.com/home?status=We%20must%20regulate%20the%20future%20flow%20of%20immigrants%20by%20modernizing%20the%20visa%20system%20and%20rewriting%20bad%20trade%20agreements.%0Ahttp%3A//bernie.to/FamiliesFirstImmigration" target="_blank">
+			<div class="detail-background" style="background-image: url('assets/berniesanders2016/images/image-grid/bernie-paper.jpg')"></div>
+			<div class="detail-cover"></div>
+			<div class="detail-text">
+				<span>Regulate future flows via a reformed visa system and reworked trade agreements.</span><span class="share-link"><span class="icon icn-twitter"></span><span class="text">Share</span></span>
+			</div></a> <a href="https://twitter.com/home?status=Bernie%20rejects%20the%20argument%20that%20the%20border%20must%20be%20further%20militarized%20before%20implementing%20a%20path%20to%20citizenship.%0Ahttp%3A//bernie.to/FamiliesFirstImmigration" target="_blank">
+			<div class="detail-background" style="background-image: url('assets/berniesanders2016/images/image-grid/fence.jpg')"></div>
+			<div class="detail-cover"></div>
+			<div class="detail-text">
+				<span>Put a stop to the notion that the border must be secured before a legalization can happen.</span><span class="share-link"><span class="icon icn-twitter"></span><span class="text">Share</span></span>
+			</div></a> <a href="https://twitter.com/home?status=Bernie%20will%20dismantle%20inhumane%20deportation%20programs%20and%20end%20private%20detention%20centers.%20Read%20his%20full%20plan%20here%3A%0Ahttp%3A//bernie.to/FamiliesFirstImmigration" target="_blank">
+			<div class="detail-background" style="background-image: url('assets/berniesanders2016/images/image-grid/prison.jpg')"></div>
+			<div class="detail-cover"></div>
+			<div class="detail-text">
+				<span>Dismantle inhumane deportation programs and private detention centers.</span><span class="share-link"><span class="icon icn-twitter"></span><span class="text">Share</span></span>
+			</div></a> <a href="https://twitter.com/home?status=We%20must%20reject%20%E2%80%9CThe%20Great%20Sanctuary%20City%20Slander%E2%80%9D%20and%20support%20humane%20laws%20that%20integrate%20immigrants%20to%20our%20society.%0Ahttp%3A//bernie.to/FamiliesFirstImmigration" target="_blank">
+			<div class="detail-background" style="background-image: url('assets/berniesanders2016/images/image-grid/stop-deportations.jpg')"></div>
+			<div class="detail-cover"></div>
+			<div class="detail-text">
+				<span>Reject "The Great Sanctuary City Slander" as the politics of fear, and support humane local and state laws that integrate immigrants to our society.</span><span class="share-link"><span class="icon icn-twitter"></span><span class="text">Share</span></span>
+			</div></a>
+		</div>
+	</div>
+	<!-- /IMAGE GRID -->
+
+	<section>
+
+		<!-- LITTLE QUOTE -->
+		<div class="issue-quote">
+			<div class="issue-quote--content">
+				 <span>Little Quote -</span> America has always been a haven for <span>the oppressed</span>. We cannot and must not shirk the <span>historic role</span> of the United States as a <span>protector of vulnerable people</span> fleeing persecution.
+				<div class="issue-quote--footer">
+					<h1>
+						– Sen. Bernie Sanders
+					</h1>
+					<div class="menu-social">
+						<ul>
+							<li class="icon icn-twitter">
+								<a href="https://twitter.com/home?status=https://berniesanders.com/issues/a-fair-and-humane-immigration-policy/%20via%20%40BernieSanders" target="_blank"></a>
+							</li>
+							<li class="icon icn-facebook">
+								<a href="https://www.facebook.com/share.php?u=https://berniesanders.com/issues/a-fair-and-humane-immigration-policy/" target="_blank"></a>
+							</li>
+							<li class="icon icn-email">
+								<a href="mailto:?subject=A%20Fair%20and%20Humane%20Immigration%20Policy&amp;body=Despite%20the%20central%20role%20immigrants%20play%20in%20our%20economy%20and%20in%20our%20daily%20lives,%20undocumented%20workers%20are%20reviled%20by%20some%20for%20political%20gain%20and%20shunted%20into%20the%20shadows.%20It%20is%20time%20for%20this%20disgraceful%20situation%20to%20end.%20This%20country%20faces%20enormous%20problems%20and%20they%20will%20not%20be%20solved%20unless%20we%20are%20united.%20It%20is%20time%20to%20end%20the%20politics%20of%20division%20in%20this%20country.%20We%20cannot%20and%20we%20should%20not%20be%20talking%20about%20sweeping%20up%20millions%20of%20men,%20women,%20and%20children%20%E2%80%93%20many%20of%20whom%20have%20been%20here%20for%20years%20%E2%80%93%20and%20throwing%20them%20out%20of%20the%20country.%20That%E2%80%99s%20wrong%20%E2%80%A6%20Read%20more%20about%20it%20https://berniesanders.com/a-fair-and-humane-immigration-policy/" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /LITTLE QUOTE -->
+
+		<!-- ARTICLE (inside a <section> tag) -->
+		<article>
+			<header>
+				<h1>Article</h1>
+				<h2>Title of Article</h2><time datetime="2015-12-11">December 11, 2015</time>
+				<div class="menu-social">
+					<ul>
+						<li class="icon icn-twitter">
+							<a href="https://twitter.com/home?status=https://berniesanders.com/a-blown-opportunity/%20via%20%40BernieSanders" target="_blank">Twitter</a>
+						</li>
+						<li class="icon icn-facebook">
+							<a href="https://www.facebook.com/share.php?u=https://berniesanders.com/a-blown-opportunity/" target="_blank">Facebook</a>
+						</li>
+						<li class="icon icn-email">
+							<a href="mailto:?subject=A%20Blown%20Opportunity&amp;body=Figures%20released%20on%20Monday%20showed%206.7%20million%20viewers%20watched%20the%20Democrats%E2%80%99%20debate%20last%20Saturday%20night%20in%20Manchester,%20New%20Hampshire.%20The%20last%20Republican%20debate%20a%20few%20days%20earlier%20drew%2011%20million%20more%20viewers.%20The%20low%20viewership%20for%20the%20New%20Hampshire%20debate%20on%20the%20Saturday%20before%20Christmas%20was%20not%20surprising.%20It%E2%80%99s%20like%20someone%20planned%20it%20that%20way.%20%E2%80%9CWe%20are%20missing%20a%20golden%20opportunity%20to%20contrast%20our%20ideas%20to%20the%20right-wing%20extremism%20of%20the%20Republican%20Party.%20This%20is%20unfortunate%20and%20a%20blown%20opportunity%20by%20the%20leadership%20of%20the%20Democratic%20National%20Committee,%E2%80%9D%20said%20Michael%20Briggs,%20Sanders%E2%80%99%20spokesman.%20For%20the%20record,%20the%20Sanders%20campaign%20was%20%E2%80%A6%20Read%20more%20about%20it%20https://berniesanders.com/a-blown-opportunity/">Email Link</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div style="clear: both;"></div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.</p>
+			
+			<!-- blockquote (inside a <section> tag) -->
+			<blockquote>
+				<p>
+					blockquote - “The recreation center overflowed with people. Its parking lot was full, every seat was filled and the aisles were brimming with people standing. Crowd estimates varied from between 750 and 1,000, and those attending frequently chimed in with cheers and applause throughout the afternoon as Sanders spoke.”
+				</p>
+			</blockquote>
+			<!-- blockquote -->
+
+			<!-- prev/next nav (inside a <section> tag) -->
+			<h1>Navigation Arrows</h1>
+			<nav class="pagination">
+				<h5 class="previous"><a href="#prev" rel="prev">Previous Page</a></h5>
+				<h5 class="next"><a href="#next" rel="next">Next Page</a></h5>
+			</nav>
+			<div style="clear: both;"></div>
+			<!-- /prev/next nav -->
+
+			<div style="height:2rem"></div>
+
+			<!-- article gallery (inside a <section> tag) -->
+			<h1>Article Gallery</h1>
+			<div class="gallery galleryid-2050 gallery-columns-4 gallery-size-medium" id="gallery-3">
+				<dl class="gallery-item">
+					<dt class="gallery-icon landscape">
+						<a data-lightbox="gallery" href="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0039.jpg"><img alt="053115_Sanders_Minneapolis_MN_CD_0039" class="attachment-medium size-medium" height="200" sizes="(max-width: 300px) 100vw, 300px" src="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0039-300x200.jpg" srcset="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0039-300x200.jpg 300w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0039-1024x684.jpg 1024w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0039-1600x1068.jpg 1600w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0039-1200x801.jpg 1200w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0039-800x534.jpg 800w" width="300"></a>
+					</dt>
+				</dl>
+				<dl class="gallery-item">
+					<dt class="gallery-icon landscape">
+						<a data-lightbox="gallery" href="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0063.jpg"><img alt="053115_Sanders_Minneapolis_MN_CD_0063" class="attachment-medium size-medium" height="200" sizes="(max-width: 300px) 100vw, 300px" src="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0063-300x200.jpg" srcset="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0063-300x200.jpg 300w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0063-1024x684.jpg 1024w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0063-1600x1068.jpg 1600w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0063-1200x801.jpg 1200w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0063-800x534.jpg 800w" width="300"></a>
+					</dt>
+				</dl>
+				<dl class="gallery-item">
+					<dt class="gallery-icon landscape">
+						<a data-lightbox="gallery" href="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0129.jpg"><img alt="053115_Sanders_Minneapolis_MN_CD_0129" class="attachment-medium size-medium" height="200" sizes="(max-width: 300px) 100vw, 300px" src="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0129-300x200.jpg" srcset="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0129-300x200.jpg 300w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0129-1024x682.jpg 1024w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0129-1600x1065.jpg 1600w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0129-1200x799.jpg 1200w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0129-800x532.jpg 800w" width="300"></a>
+					</dt>
+				</dl>
+				<dl class="gallery-item">
+					<dt class="gallery-icon landscape">
+						<a data-lightbox="gallery" href="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0138.jpg"><img alt="053115_Sanders_Minneapolis_MN_CD_0138" class="attachment-medium size-medium" height="200" sizes="(max-width: 300px) 100vw, 300px" src="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0138-300x200.jpg" srcset="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0138-300x200.jpg 300w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0138-1024x682.jpg 1024w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0138-1600x1065.jpg 1600w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0138-1200x799.jpg 1200w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0138-800x532.jpg 800w" width="300"></a>
+					</dt>
+				</dl><br style="clear: both">
+				<dl class="gallery-item">
+					<dt class="gallery-icon landscape">
+						<a data-lightbox="gallery" href="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0154.jpg"><img alt="053115_Sanders_Minneapolis_MN_CD_0154" class="attachment-medium size-medium" height="200" sizes="(max-width: 300px) 100vw, 300px" src="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0154-300x200.jpg" srcset="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0154-300x200.jpg 300w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0154-1024x682.jpg 1024w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0154-1600x1065.jpg 1600w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0154-1200x799.jpg 1200w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0154-800x532.jpg 800w" width="300"></a>
+					</dt>
+				</dl>
+				<dl class="gallery-item">
+					<dt class="gallery-icon landscape">
+						<a data-lightbox="gallery" href="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0184.jpg"><img alt="053115_Sanders_Minneapolis_MN_CD_0184" class="attachment-medium size-medium" height="200" sizes="(max-width: 300px) 100vw, 300px" src="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0184-300x200.jpg" srcset="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0184-300x200.jpg 300w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0184-1024x684.jpg 1024w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0184-1600x1068.jpg 1600w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0184-1200x801.jpg 1200w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0184-800x534.jpg 800w" width="300"></a>
+					</dt>
+				</dl>
+				<dl class="gallery-item">
+					<dt class="gallery-icon landscape">
+						<a data-lightbox="gallery" href="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0238.jpg"><img alt="053115_Sanders_Minneapolis_MN_CD_0238" class="attachment-medium size-medium" height="200" sizes="(max-width: 300px) 100vw, 300px" src="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0238-300x200.jpg" srcset="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0238-300x200.jpg 300w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0238-1024x684.jpg 1024w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0238-1600x1068.jpg 1600w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0238-1200x801.jpg 1200w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0238-800x534.jpg 800w" width="300"></a>
+					</dt>
+				</dl>
+				<dl class="gallery-item">
+					<dt class="gallery-icon landscape">
+						<a data-lightbox="gallery" href="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0327.jpg"><img alt="053115_Sanders_Minneapolis_MN_CD_0327" class="attachment-medium size-medium" height="200" sizes="(max-width: 300px) 100vw, 300px" src="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0327-300x200.jpg" srcset="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0327-300x200.jpg 300w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0327-1024x684.jpg 1024w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0327-1600x1068.jpg 1600w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0327-1200x801.jpg 1200w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0327-800x534.jpg 800w" width="300"></a>
+					</dt>
+				</dl><br style="clear: both">
+				<dl class="gallery-item">
+					<dt class="gallery-icon landscape">
+						<a data-lightbox="gallery" href="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0362.jpg"><img alt="053115_Sanders_Minneapolis_MN_CD_0362" class="attachment-medium size-medium" height="200" sizes="(max-width: 300px) 100vw, 300px" src="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0362-300x200.jpg" srcset="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0362-300x200.jpg 300w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0362-1024x684.jpg 1024w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0362-1600x1068.jpg 1600w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0362-1200x801.jpg 1200w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0362-800x534.jpg 800w" width="300"></a>
+					</dt>
+				</dl>
+				<dl class="gallery-item">
+					<dt class="gallery-icon landscape">
+						<a data-lightbox="gallery" href="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0383.jpg"><img alt="053115_Sanders_Minneapolis_MN_CD_0383" class="attachment-medium size-medium" height="200" sizes="(max-width: 300px) 100vw, 300px" src="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0383-300x200.jpg" srcset="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0383-300x200.jpg 300w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0383-1024x682.jpg 1024w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0383-1600x1065.jpg 1600w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0383-1200x799.jpg 1200w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0383-800x532.jpg 800w" width="300"></a>
+					</dt>
+				</dl>
+				<dl class="gallery-item">
+					<dt class="gallery-icon landscape">
+						<a data-lightbox="gallery" href="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0424.jpg"><img alt="053115_Sanders_Minneapolis_MN_CD_0424" class="attachment-medium size-medium" height="200" sizes="(max-width: 300px) 100vw, 300px" src="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0424-300x200.jpg" srcset="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0424-300x200.jpg 300w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0424-1024x682.jpg 1024w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0424-1600x1065.jpg 1600w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0424-1200x799.jpg 1200w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0424-800x532.jpg 800w" width="300"></a>
+					</dt>
+				</dl>
+				<dl class="gallery-item">
+					<dt class="gallery-icon landscape">
+						<a data-lightbox="gallery" href="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0549.jpg"><img alt="053115_Sanders_Minneapolis_MN_CD_0549" class="attachment-medium size-medium" height="200" sizes="(max-width: 300px) 100vw, 300px" src="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0549-300x200.jpg" srcset="assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0549-300x200.jpg 300w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0549-1024x682.jpg 1024w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0549-1600x1065.jpg 1600w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0549-1200x799.jpg 1200w, assets/berniesanders2016/images/article-gallery/053115_Sanders_Minneapolis_MN_CD_0549-800x532.jpg 800w" width="300"></a>
+					</dt>
+				</dl><br style="clear: both">
+			</div>
+			<!-- /article gallery -->
+
+			<!-- timeline (inside a <section> tag) -->
+			<script type="text/javascript">
+			$(function()
+			{
+				$(".timeline-wrapper").simpleRotator(
+				{
+					navigation: ".timeline-navigator",
+					content: ".timeline-items"
+				})
+			})
+			</script>
+			<div class="section-offset">
+				<section class="timeline" id="timeline">
+					<header>
+						<h1>
+							Timeline
+						</h1>
+						<h2>
+							Bernie's Story
+						</h2>
+					</header>
+					<div class="timeline-wrapper clearfix cr-container">
+						<div class="timeline-navigator cr-nav-container">
+							<div class="cr-nav-item cr-nav-item-active">
+								<span>Intro</span>
+							</div>
+							<div class="cr-nav-item">
+								<span>Early Years</span>
+							</div>
+							<div class="cr-nav-item">
+								<span>1960s</span>
+							</div>
+							<div class="cr-nav-item">
+								<span>1970s</span>
+							</div>
+							<div class="cr-nav-item">
+								<span>1980s</span>
+							</div>
+							
+						</div>
+						<div class="timeline-items cr-content-container" style="height: 240px;">
+							<div class="clearfix post-410 timeline type-timeline status-publish hentry cr-content-item cr-content-item-active" id="post-410">
+								<header>
+									<h3>
+										Intro
+									</h3>
+								</header>
+								<p>
+									Bernie Sanders is a Democratic candidate for President of the United States. He is serving his second term in the U.S. Senate after winning re-election in 2012 with 71 percent of the vote. Sanders previously served as mayor of Vermont’s largest city for eight years before defeating an incumbent Republican to be the sole congressperson for the state in the U.S. House of Representatives. He lives in Burlington, Vermont with his wife Jane and has four children and seven grandchildren.
+								</p>
+							</div>
+							<div class="clearfix post-536 timeline type-timeline status-publish hentry cr-content-item" id="post-536">
+								<header>
+									<h3>
+										Early Years
+									</h3>
+								</header>
+								<h4>
+									September 1941
+								</h4>
+								<p>
+									Bernard “Bernie” Sanders is born in Brooklyn, New York to Eli and Dorothy Sanders. His father immigrated to the United States from Poland at the age of 17 without much in the way of money or a formal education. His mother Dorothy graduated high school in New York City. Sanders and his brother Larry grew up in a small rent-controlled apartment in Brooklyn.
+								</p>
+							</div>
+							<div class="clearfix post-537 timeline type-timeline status-publish hentry cr-content-item" id="post-537">
+								<header>
+									<h3>
+										1960s
+									</h3>
+								</header>
+								<h4>
+									January 1962
+								</h4>
+								<p>
+									As a Congress of Racial Equality (CORE) officer, a 20-year-old Sanders leads students in a multi-week sit-in to oppose segregation in off-campus housing owned by the University of Chicago.
+								</p>
+								<style type="text/css">
+								#gallery-1{margin:auto;}#gallery-1 .gallery-item{float:left;margin-top:10px;text-align:center;width:100%;}#gallery-1 img{border:2px solid #cfcfcf;}#gallery-1 .gallery-caption{margin-left:0;}
+								</style>
+								<div class="gallery galleryid-537 gallery-columns-1 gallery-size-large" id="gallery-1">
+									<dl class="gallery-item">
+										<dt class="gallery-icon landscape">
+											<a data-lightbox="gallery" href="https://berniesanders.com/wp-content/uploads/2006/05/chicago-sit-in.jpg"><img alt="chicago-sit-in" class="attachment-large size-large" height="699" sizes="(max-width: 1024px) 100vw, 1024px" src="https://berniesanders.com/wp-content/uploads/2006/05/chicago-sit-in-1024x699.jpg" srcset="https://berniesanders.com/wp-content/uploads/2006/05/chicago-sit-in-300x205.jpg 300w, https://berniesanders.com/wp-content/uploads/2006/05/chicago-sit-in-1024x699.jpg 1024w, https://berniesanders.com/wp-content/uploads/2006/05/chicago-sit-in.jpg 1200w, https://berniesanders.com/wp-content/uploads/2006/05/chicago-sit-in-800x546.jpg 800w" width="1024"></a>
+										</dt>
+									</dl><br style="clear: both">
+								</div>
+								<h4>
+									August 1963
+								</h4>
+								<p>
+									An organizer for the Student Nonviolent Coordinating Committee, Sanders takes an overnight bus with fellow activists for his first-ever trip to Washington, D.C. He hears Martin Luther King Jr.’s historic “I Have a Dream” speech firsthand at the March on Washington for Jobs and Freedom.
+								</p>
+							</div>
+							<div class="clearfix post-3212 timeline type-timeline status-publish hentry cr-content-item" id="post-3212">
+								<header>
+									<h3>
+										1970s
+									</h3>
+								</header>
+								<h4>
+									1972
+								</h4>
+								<p>
+									Sanders wins 2 percent of the vote in his first statewide race, a special election for a U.S. Senate seat in Vermont.
+								</p>
+								<p>
+									Sanders wins 1 percent of the vote in his second run for statewide office during a gubernatorial election.
+								</p>
+								<h4>
+									1974
+								</h4>
+								<p>
+									In his second campaign for the U.S. Senate, Sanders attracts 4 percent of the vote.
+								</p>
+								<h4>
+									1976
+								</h4>
+								<p>
+									Sanders gets 6 percent of the vote in a race to replace Gov. Thomas Salmon.
+								</p>
+							</div>
+							<div class="clearfix post-538 timeline type-timeline status-publish hentry cr-content-item" id="post-538">
+								<header>
+									<h3>
+										1980s
+									</h3>
+								</header>
+								<h4>
+									1981
+								</h4>
+								<p>
+									In a stunning upset, Sanders wins the mayoral race in Burlington, Vermont’s largest city, by a mere 10 votes. Running as an independent, he shocks the city’s political establishment by defeating a six-term, local machine mayor.
+								</p>
+								<style type="text/css">
+								#gallery-2{margin:auto;}#gallery-2 .gallery-item{float:left;margin-top:10px;text-align:center;width:33%;}#gallery-2 img{border:2px solid #cfcfcf;}#gallery-2 .gallery-caption{margin-left:0;}
+								</style>
+								<div class="gallery galleryid-538 gallery-columns-3 gallery-size-thumbnail" id="gallery-2">
+									<dl class="gallery-item">
+										<dt class="gallery-icon landscape">
+											<a data-lightbox="gallery" href="https://berniesanders.com/wp-content/uploads/2004/05/19811.jpg"><img alt="1981" class="attachment-thumbnail size-thumbnail" height="150" src="https://berniesanders.com/wp-content/uploads/2004/05/19811-150x150.jpg" width="150"></a>
+										</dt>
+									</dl>
+									<dl class="gallery-item">
+										<dt class="gallery-icon landscape">
+											<a data-lightbox="gallery" href="https://berniesanders.com/wp-content/uploads/2004/05/1981-2-11.jpg"><img alt="1981-2 (1)" class="attachment-thumbnail size-thumbnail" height="150" src="https://berniesanders.com/wp-content/uploads/2004/05/1981-2-11-150x150.jpg" width="150"></a>
+										</dt>
+									</dl>
+									<dl class="gallery-item">
+										<dt class="gallery-icon landscape">
+											<a data-lightbox="gallery" href="https://berniesanders.com/wp-content/uploads/2004/05/November-1981-21.jpg"><img alt="November-1981-2" class="attachment-thumbnail size-thumbnail" height="150" src="https://berniesanders.com/wp-content/uploads/2004/05/November-1981-21-150x150.jpg" width="150"></a>
+										</dt>
+									</dl><br style="clear: both">
+								</div>
+								<h4>
+									1983
+								</h4>
+								<p>
+									Sanders wins 52 percent of the vote, defeating his closest challenger by 21 points, to be re-elected to a second term as mayor. Burlington sets a record for voter turnout as the Sanders campaign energizes thousands of new voters.
+								</p>
+								
+								<div class="gallery galleryid-538 gallery-columns-1 gallery-size-large" id="gallery-3">
+									<dl class="gallery-item">
+										<dt class="gallery-icon landscape">
+											<a data-lightbox="gallery" href="https://berniesanders.com/wp-content/uploads/2004/05/1983-RobSwanson1.jpg"><img alt="1983-RobSwanson" class="attachment-large size-large" height="508" sizes="(max-width: 640px) 100vw, 640px" src="https://berniesanders.com/wp-content/uploads/2004/05/1983-RobSwanson1.jpg" srcset="https://berniesanders.com/wp-content/uploads/2004/05/1983-RobSwanson1-300x238.jpg 300w, https://berniesanders.com/wp-content/uploads/2004/05/1983-RobSwanson1.jpg 640w" width="640"></a>
+										</dt>
+									</dl><br style="clear: both">
+								</div>
+								<h4>
+									1984
+								</h4>
+								<p>
+									Mayor Sanders establishes the Burlington Community Land Trust, the first municipal housing land trust in the country for affordable housing. The project becomes a model emulated throughout the world. It later wins an award from Jack Kemp-led HUD.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<!-- /timeline -->
+
+		</article>
+		<!-- /ARTICLE -->
+
+		<!-- MESSAGE BOX + BUTTON (inside a <section> tag) -->
 		<aside class="clearfix" id="interstitial">
 			<p>This is an informational message box with an action button.</p>
 			<div class="action-btn">
-				<a class="action" href="https://go.berniesanders.com/page/s/join?source=news">Button</a>
+				<a class="action" href="#button">Button</a>
 			</div>
 		</aside>
+		<!-- /MESSAGE BOX + BUTTON -->
+
+		<!-- QUICK FORM (inside a <section> tag) -->
+		<script type="text/javascript">
+		$(function()
+		{
+			$('.quick-form').submit(function(e)
+			{
+				var form = $(this);
+				var parent = form.parents('div:first');
+
+				form.hide();
+				parent.find('.signup-loader').show();
+
+				e.preventDefault();
+				$(this).ajaxSubmit({
+					success: function()
+					{
+						parent.find('.signup-loader').hide();
+						parent.find('.signup-thanks').show();
+					},
+					error: function()
+					{
+						parent.find('.signup-loader').hide();
+						parent.find('.signup-thanks').show();
+					}
+				});
+			})
+		});
+		</script>
+		<div class="inlineForm clearfix">
+			<form action="//go.berniesanders.com/page/s/announcement-livestream" class="bsd-signup-32 quick-form" method="post" name="signup">
+				<h3>
+					Quick Form
+				</h3>
+				<div id="bsderror" style="display: none;">
+					Please fill out All fields
+				</div>
+				<div class="fieldset" id="bsd-field-email">
+					<div class="label">
+						<label class="field">Email Address<span class="required">*</span></label>
+					</div>
+					<div class="input">
+						<input class="text" id="email" name="email" placeholder="Email Address" size="48" type="email">
+					</div>
+				</div>
+				<div class="fieldset" id="bsd-field-zip">
+					<div class="label">
+						<label class="field">Postal Code<span class="required">*</span></label>
+					</div>
+					<div class="input">
+						<input id="zip" name="zip" placeholder="Zip Code" size="8" type="text">
+					</div>
+				</div>
+				<div style="display: none;">
+					<label for="best-contact-time">Please leave this field blank:</label> <input id="best-contact-time" name="best-contact-time" type="text">
+				</div>
+				<div class="fieldset" id="bsd-field-submit-btn">
+					<div class="label"></div>
+					<div class="input">
+						<input name="submit-btn" type="submit" value="Join">
+					</div>
+				</div>
+				<p class="hidden">
+					<input name="redirect_url" type="hidden" value=""><input id="_guid" name="_guid" type="hidden" value="">
+				</p>
+			</form>
+			<div id="signup-loader" class="signup-loader" style="display: none; color: #fff;">
+				Loading…
+			</div>
+			<div id="signup-thanks" class="signup-thanks" style="display: none; color: #fff;">
+				Thank you message goes here! <a href="https://secure.actblue.com/contribute/page/lets-go-bernie?refcode=charleston-livestream" style="color: #fff; text-decoration: underline;">Make a donation</a> to help us keep the momentum.
+			</div>
+		</div>
+		<!-- /QUICK FORM (inside a <section> tag) -->
+		
 	</section>
-	<!-- /MESSAGE BOX + BUTTON -->
+
+	<!-- PICKER FORM -->
+	<section class="contribute module clearfix">
+		<h2>
+			Picker Form
+		</h2>
+		<hr>
+		<form action="https://secure.actblue.com/contribute/page/lets-go-bernie" class="donation-preselect" id="homepage-donation-preselect" method="get" name="homepage-donation-preselect">
+			<input type="hidden" name="keep-this-but-ignore-it" value="">
+			<input checked id="pick-1" name="amount" type="radio" value="1"> <label for="pick-1">1</label> 
+			<input id="pick-2" name="amount" type="radio" value="2"> <label for="pick-2">2</label> 
+			<input id="pick-3" name="amount" type="radio" value="3"> <label for="pick-3">3</label> 
+			<input id="pick-4" name="amount" type="radio" value="4"> <label for="pick-4">4</label>
+			<input id="other-amount" max="2700" min="1" placeholder="Other" type="number"> <input type="submit" value="Pick">
+		</form>
+	</section>
+	<!-- /PICKER FORM -->
+
+	<!-- ANOTHER BUTTON -->
+	<aside><a class="action" href="#another-button">Another Button</a></aside>
+	<!-- /ANOTHER BUTTON -->
+
+	<!-- SOCIAL BUTTONS -->
+	<section class="social module">
+		<h2>
+			Social Buttons
+		</h2>
+		<hr>
+		<nav>
+			<ul class="menu" id="menu-homepage-social-media">
+				<li class="facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-810" id="menu-item-810">
+					<a href="https://www.facebook.com/berniesanders" target="_blank">Facebook</a>
+				</li>
+				<li class="twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-815" id="menu-item-815">
+					<a href="https://twitter.com/BernieSanders" target="_blank">Twitter</a>
+				</li>
+				<li class="youtube menu-item menu-item-type-custom menu-item-object-custom menu-item-816" id="menu-item-816">
+					<a href="https://www.youtube.com/channel/UCH1dpzjCEiGAt8CXkryhkZg" target="_blank">YouTube</a>
+				</li>
+				<li class="instagram menu-item menu-item-type-custom menu-item-object-custom menu-item-877" id="menu-item-877">
+					<a href="https://instagram.com/berniesanders/" target="_blank">Instagram</a>
+				</li>
+				<li class="tumblr menu-item menu-item-type-custom menu-item-object-custom menu-item-4921" id="menu-item-4921">
+					<a href="http://berniesanders.tumblr.com/" target="_blank">Tumblr</a>
+				</li>
+			</ul>
+		</nav>
+	</section>
+	<!-- / SOCIAL BUTTONS -->
+
+	<div style="height:2rem"></div>
 
 	<!-- BOTTOM FORM -->
 	<div class="module-wrapper">
@@ -205,12 +742,134 @@
 			<form action="https://go.berniesanders.com/page/s/join" class="bsd-signup-29" id="signup" method="post" name="signup">
 				<label>Email Address</label> <input class="email" id="email" name="email" placeholder="Email Address" type="email"> <label>Zip Code</label> <input class="zip" id="zip" name="zip" placeholder="Zip Code" type="text">
 				<div style="display: none">
-					<label for="best-contact-time">Please leave this field blank:</label> <input id="best-contact-time" name="best-contact-time" type="text">
-				</div><input name="submit-btn" type="submit" value="Submit"> <input name="redirect_url" type="hidden" value=""><input id="_guid" name="_guid" type="hidden" value="">
+					<label for="best-contact-time">Please leave this field blank:</label> 
+					<input id="best-contact-time" name="best-contact-time" type="text">
+				</div>
+
+				<input name="submit-btn" type="submit" value="Submit"> 
+				<input name="redirect_url" type="hidden" value="">
 			</form>
 		</section>
 	</div>
 	<!-- /BOTTOM FORM -->
+
+	<!-- FOOTER -->
+	<div class="footer-offset">
+		<footer>
+			<nav class="clearfix">
+				<div class="navgroup">
+					<h3>Learn</h3>
+					<ul class="menu" id="menu-learn-1">
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-871">
+							<a href="https://berniesanders.com/">Home</a>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-820">
+							<a href="https://berniesanders.com/about/">Meet Bernie</a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-869">
+							<a href="/issues">Issues</a>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-826">
+							<a href="https://berniesanders.com/news/">News</a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3898">
+							<a href="/daily">Democracy Daily</a>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1820">
+							<a href="https://berniesanders.com/es/">En Español</a>
+						</li>
+					</ul>
+				</div>
+				<div class="navgroup">
+					<h3>Organize</h3>
+					<ul class="menu" id="menu-organize-1">
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-777">
+							<a href="https://secure.actblue.com/contribute/page/lets-go-bernie?refcode=homepage_full_nav">Contribute</a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-811">
+							<a href="https://go.berniesanders.com/page/s/join?source=web_full_nav">Sign Up</a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-812">
+							<a href="https://go.berniesanders.com/page/signup/volunteer-for-bernie?source=web_full_nav">Volunteer</a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-813">
+							<a href="http://map.berniesanders.com/?source=web_full_nav">Events</a>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1873">
+							<a href="https://berniesanders.com/organize/">Organizing Hub</a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5473">
+							<a href="https://store.berniesanders.com/">Store</a>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4287">
+							<a href="https://berniesanders.com/jobswithbernie2016/">Jobs</a>
+						</li>
+					</ul>
+				</div>
+				<div class="navgroup">
+					<h3>Connect</h3>
+					<ul class="menu" id="menu-connect-1">
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-778">
+							<a href="https://www.facebook.com/berniesanders" target="_blank">Facebook</a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-806">
+							<a href="https://twitter.com/BernieSanders" target="_blank">Twitter</a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-817">
+							<a href="https://www.youtube.com/channel/UCH1dpzjCEiGAt8CXkryhkZg" target="_blank">YouTube</a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1825">
+							<a href="https://instagram.com/berniesanders/" target="_blank">Instagram</a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4919">
+							<a href="http://berniesanders.tumblr.com/" target="_blank">Tumblr</a>
+						</li>
+					</ul>
+				</div>
+				<div class="navgroup">
+					<h3>States</h3>
+					<ul class="menu" id="menu-states-1">
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-779">
+							<a href="https://berniesanders.com/iowa/">Iowa</a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-805">
+							<a href="https://berniesanders.com/new-hampshire/">New Hampshire</a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-783">
+							<a href="https://berniesanders.com/nevada/">Nevada</a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-782">
+							<a href="https://berniesanders.com/south-carolina/">South Carolina</a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-781">
+							<a href="https://go.berniesanders.com/page/s/signup-vt?source=web_full_nav">Vermont</a>
+						</li>
+					</ul>
+				</div>
+				<div class="navgroup">
+					<h3>Media</h3>
+					<ul class="menu" id="menu-media-1">
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-780">
+							<a href="/press-release">Press Releases</a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3406">
+							<a href="https://go.berniesanders.com/page/s/press-list?source=web_full_nav">Event Registration</a>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-823">
+							<a href="https://berniesanders.com/media-kit/">Media Kit</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<p class="address"><a href="#">Graphics for Bernie</a><br>
+			Address<br>
+			City, ST 12345</p>
+			<p class="site-title">Footer Message</p><span class="billionaires"><svg viewbox="0 0 350 47">
+			<use xlink:href="assets/berniesanders2016/images/icns/billionaires.svg#billionaires" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg> (not the billionaires)</span>
+			<p><span class="copyright">© Bernie 2016</span> | <a href="/privacy-policy">Privacy Policy</a></p>
+		</footer>
+	</div>
+	<!-- /FOOTER -->
 
 </body>
 
